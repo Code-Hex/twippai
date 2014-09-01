@@ -27,6 +27,9 @@ Path::Class
 JSON::XS  
 のモジュールを sudo cpan install でインストールすれば、このスクリプトは使えるはず...  
   
+%cd (スクリプトが入ってるディレクトリ)
+%perl twi.pl  
+  
 Python:  
 json  
 requests  
@@ -35,11 +38,15 @@ requests_oauthlib
 のモジュールを sudo pip install でインストールすれば、このスクリプトは使えるはず...  
 ※Python だけ実行中の表示が違います。  
   
+%cd (スクリプトが入ってるディレクトリ)
+%pyton twi.py  
+  
 Ruby:  
 faraday  
 simple_oauth  
 faraday_middleware  
 のモジュールを sudo gem install でインストールすれば、このスクリプトは使えるはず...  
 
-
-
+%cd (スクリプトが入ってるディレクトリ)
+%ruby twi.rb  
+  
