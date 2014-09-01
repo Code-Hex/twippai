@@ -1,7 +1,8 @@
 twippai
 =======
 
-Perl、Python、RubyでTwitterからたくさんのおっぱいをダウンロードするっていうのを作った！  
+Perl、Python、RubyでTwitterからたくさんのおっぱいをダウンロードするっていうのを作った！ 
+https://github.com/Code-Hex/twippai  
   
 ##参考:  
 ###Ruby:  
