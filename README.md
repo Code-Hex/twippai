@@ -16,5 +16,5 @@ http://www.gesource.jp/programming/python/code/0008.html
 http://yusukebe.com/archives/20120229/072808.html  
   
   
-#使い方  
-https://github.com/Code-Hex/twippai/blob/master/sample.gif
+#使い方
+!(https://github.com/Code-Hex/twippai/blob/master/sample.gif)
