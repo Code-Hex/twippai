@@ -17,4 +17,4 @@ http://yusukebe.com/archives/20120229/072808.html
   
   
 #使い方
-!(https://github.com/Code-Hex/twippai/blob/master/sample.gif)
+![これ](https://github.com/Code-Hex/twippai/blob/master/sample.gif)
