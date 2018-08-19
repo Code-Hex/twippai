@@ -34,7 +34,7 @@ var (
 
 func main() {
 	flag.Parse()
-	createDirIfNotExist("tweeter")
+	createDirIfNotExist("go-twippai")
 	api := getTwitterApi()
 	getResult(api, *word, *length)
 }
@@ -60,10 +60,10 @@ func getResult(api *anaconda.TwitterApi, word string, length int) {
 			log.Fatal("recerived unexpected value", ok)
 			continue
 		}
-		if counter == length {
-			break
-		}
 		for _, media := range t.ExtendedEntities.Media {
+			if counter == length {
+				break
+			}
 			if media.Media_url_https != "" && media.Type == "photo" {
 				save(media.Media_url_https, counter)
 				counter++
@@ -79,7 +79,7 @@ func save(url string, counter int) {
 	}
 
 	defer response.Body.Close()
-	filename := "tweeter/image_" + strconv.Itoa(counter) + ".jpg"
+	filename := "go-twippai/image_" + strconv.Itoa(counter) + ".jpg"
 	file, err := os.Create(filename)
 	if err != nil {
 		log.Fatal(err)
@@ -91,5 +91,5 @@ func save(url string, counter int) {
 	}
 
 	file.Close()
-	fmt.Println(url+" Success!", counter)
+	fmt.Println(url+" Success!", "[", counter, "]")
 }
